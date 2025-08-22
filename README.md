@@ -1,3 +1,4 @@
 # Predicting E-Commerce Customer Churn in Python
 An e-commerce churn dataset from Kaggle is used to identify customers most likely to leave within a given period. The pipeline includes duplicate removal, median imputation for numeric gaps, domain-aware outlier handling, and a stratified 80/20 train–test split. Features mix behavior and profile signals (e.g., Tenure, DaySinceLastOrder, CashbackAmount, PreferedOrderCat, MaritalStatus) and are processed with one-hot encoding and scaling inside leak-safe scikit-learn pipelines. Several models are compared—SVC, K-NN, Random Forest, XGBoost, and a Stacking ensemble. Evaluation emphasizes PR-AUC and a profit-based decision threshold aligned to retention economics. On the test set, XGBoost produced the strongest ranking quality (highest PR-AUC) and the most true positives at the profit-optimized threshold, yielding the top business impact (Net Impact / ROI), so it is selected as the final model for proactive retention campaigns.
- 
+## Article 
+https://medium.com/@anindyabudiarti/predicting-e-commerce-customer-churn-in-python-c68ccb3918c7
